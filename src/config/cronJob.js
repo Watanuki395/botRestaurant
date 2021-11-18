@@ -1,4 +1,4 @@
-import cron from "cron";
+const cron = require("cron");
 
 let CronJob = cron.CronJob;
 

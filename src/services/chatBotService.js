@@ -1,4 +1,4 @@
-import request from "request";
+var request = require("request");
 
 require("dotenv").config();
 

@@ -1,4 +1,4 @@
-import express from "express";
+var express = require('express'); 
 /*
 config view engine for node app
  */

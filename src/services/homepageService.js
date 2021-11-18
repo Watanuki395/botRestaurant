@@ -1,5 +1,5 @@
-import request from "request";
-import chatBotService from "../services/chatBotService";
+var request = require("request");
+var chatBotService = require("../services/chatBotService");
 
 require("dotenv").config();
 
@@ -43,7 +43,7 @@ let setUpMessengerPlatform = (PAGE_ACCESS_TOKEN) => {
             };
 
             request({
-                "uri": "https://graph.facebook.com/v6.0/me/messenger_profile",
+                "uri": "https://graph.facebook.com/v10.0/me/messenger_profile",
                 "qs": { "access_token": PAGE_ACCESS_TOKEN },
                 "method": "POST",
                 "json": data
